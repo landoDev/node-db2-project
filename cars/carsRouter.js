@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get('/', (req, res) =>{
     // get end point
-    db('*').from('cars')
+    // db('*').from('cars')
     db('cars')
     .then(cars =>{
         res.status(200).json(cars)
